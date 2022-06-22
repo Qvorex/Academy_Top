@@ -1,0 +1,397 @@
+/* Общие стили */
+
+body {
+	margin: 0px;
+	font-family: Segoe UI;
+	background-color: rgb(234, 234, 234);
+}
+
+.side_menu h1 {
+	color: rgb(66, 65, 66);
+}
+
+#bg-green {
+	background-color: rgb(68, 139, 0);
+}
+
+#bg-orang {
+	background-color: rgb(216, 158, 36);
+}
+
+#bg-blue {
+	background-color: rgb(39, 77, 151);
+}
+
+#bg-red {
+	background-color: rgb(195, 32, 86);
+}
+
+/* Боковое меню */
+
+.general_area {
+	display: flex;
+}
+
+.side_menu {
+	position: fixed;
+	width: 180px;
+	height: 100%;
+	box-shadow: 1px 0px 6px rgb(124, 121, 121);
+	background-color: rgb(246, 246, 246);
+}
+
+.side_menu h1 {
+	margin: 10% 0 10% 18%;
+	font-size: 20px;
+}
+
+.menu_list {
+	list-style-type: none;
+	padding: 0;
+}
+
+.menu_list a {
+	text-decoration: none;
+}
+
+.menu_item {
+	margin: 0 10% 8% 10%;
+	padding: 5% 10% 5% 10%;
+	transition: 0.2s;
+	font-size: 14px;
+	color: black;
+}
+
+.menu_item:hover {
+	background-color: rgb(195, 32, 86);
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.position_img {
+	background-repeat: no-repeat;
+	background-position-x: 10%;
+	background-position-y: 45%;
+	padding-left: 25%;
+	background-size: 15%;
+}
+
+.active_tab_user {
+	background-color: rgb(195, 32, 86);
+	color: rgb(255, 255, 255);
+	background-image: url(../../img/account_white.svg);
+}
+
+.img_dashboard {
+	background-image: url(../../img/dashboard_gray.svg);
+}
+
+.img_dashboard:hover {
+	background-image: url(../../img/dashboard_white.svg);
+}
+
+.img_user {
+	background-image: url(../../img/account_gray.svg);
+}
+
+.img_user:hover {
+	background-image: url(../../img/account_white.svg);
+}
+
+.img_maps {
+	background-image: url(../../img/map_gray.svg);
+}
+
+.img_maps:hover {
+	background-image: url(../../img/map_white.png);
+}
+
+.img_notification {
+	background-image: url(../../img/notify_gray.svg);
+}
+
+.img_notification:hover {
+	background-image: url(../../img/notify_white.png);
+}
+
+.img_support {
+	background-image: url(../../img/support_gray.svg);
+}
+
+.img_support:hover {
+	background-image: url(../../img/web.svg);
+}
+
+.menu_item img {
+	width: 25px;
+	margin: 0 10px 0 0;
+}
+
+/* Основная страница */
+
+.working_area {
+	background-color: rgb(234, 234, 234);
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 180px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.working_area h1 {
+	margin: 20px 0 40px 10px;
+	font-size: 20px;
+	color: rgb(66, 65, 66);
+	display: flex;
+	align-items: center;
+}
+
+.working_area h1 img {
+	width: 30px;
+	height: 20px;
+	margin-right: 10px;
+	display: none;
+}
+
+.profile {
+	display: flex;
+}
+
+.profile_input {
+	width: 70%;
+	height: 500px;
+	background-color: rgb(246, 246, 246);
+	position: relative;
+	margin: 10px;
+	padding: 50px 15px 15px 15px;
+	margin-bottom: 50px;
+	box-shadow: 3px 5px 5px rgb(161 159 159);
+	transition: 0.5s;
+	display: flex;
+	justify-content: center;
+}
+
+.profile_input:hover {
+	box-shadow: 5px 5px 5px rgb(107, 106, 106);
+}
+
+.input_icon {
+	width: 90%;
+	height: 50px;
+	position: absolute;
+	top: -5%;
+	box-shadow: 3px 5px 5px rgb(161 159 159);
+	padding: 10px 20px 10px 20px;
+}
+
+.profile_input form {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+}
+
+.profile_input form input {
+	display: flex;
+}
+
+.input_icon h2 {
+	margin: 0;
+	margin-bottom: 5px;
+	color: aliceblue;
+	font-weight: normal;
+	font-size: 20px;
+}
+
+.input_icon h3 {
+	margin: 0;
+	color: aliceblue;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.input {
+	display: flex;
+	justify-content: space-between;
+	height: 25%;
+}
+
+.input_style {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 0 5px 0 5px;
+}
+
+.input_style label {
+	color: rgb(92, 92, 92);
+}
+
+.input_style input {
+	border: 0;
+	border-bottom: 1px solid rgb(163, 163, 163);
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.input_style input, textarea {
+	width: 100%;
+}
+
+.input_size_1 {
+	height: 25%;
+}
+
+.input_size_2 {
+	width: 50%;
+}
+
+.input_size_3 {
+	width: 33%;
+}
+
+.input_button {
+	display: flex;
+	justify-content: end;
+	margin-right: 10px;
+}
+
+.input_button input {
+	padding: 10px 50px 10px 50px;
+	border: 0;
+	background-color: rgb(195, 32, 86);
+	color: aliceblue;
+	box-shadow: 3px 5px 5px rgb(161 159 159);
+	transition: 0.5s;
+}
+
+.input_button input:hover {
+	cursor: pointer;
+	box-shadow: 5px 5px 5px rgb(107, 106, 106);
+	transition: 0.5s;
+	transform: scale(1.05);
+}
+
+.profile_card {
+	width: 40%;
+	height: 50%;
+	background-color: rgb(246, 246, 246);
+	margin: 10px;
+	padding: 130px 20px 20px 20px;
+	margin-bottom: 50px;
+	box-shadow: 3px 5px 5px rgb(161 159 159);
+	transition: 0.5s;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.profile_card:hover {
+	box-shadow: 5px 5px 5px rgb(107, 106, 106);
+}
+
+.profile_card h3 {
+	margin: 5px;
+	font-weight: 100;
+	font-size: 18px;
+	color: rgb(76, 75, 74);
+	text-align: center;
+}
+
+.profile_card h2 {
+	margin: 5px;
+	font-weight: 500;
+	font-size: 20px;
+	color: rgb(76, 75, 74);
+	text-align: center;
+}
+
+.profile_card p {
+	text-align: center;
+	color: rgb(76, 75, 74);
+}
+
+.card_icon {
+	position: absolute;
+	top: -10%;
+}
+
+.card_icon img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	box-shadow: 3px 5px 5px rgb(161 159 159);
+}
+
+/* Футер */
+
+.footer_line {
+	width: 100%;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer_button {
+	display: flex;
+	justify-content: space-between;
+	width: 18%;
+}
+
+.footer_button a {
+	text-decoration: none;
+	color: rgb(80, 79, 79);
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.footer_button p {
+	color: rgb(80, 79, 79)
+}
+
+.footer_button div {
+	width: 100%;
+	margin-left: 10px;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+	.profile {
+		flex-direction: column-reverse;
+	}
+	.profile_card {
+		width: 92%;
+	}
+	.profile_input {
+		width: 93%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.profile {
+		flex-direction: column-reverse;
+	}
+	.profile_card {
+		width: 92%;
+	}
+	.profile_input {
+		width: 93.5%;
+	}
+	.side_menu {
+		display: none;
+	}
+	.working_area {
+		margin-left: 0;
+	}
+	.working_area h1 img {
+		display: block;
+		cursor: pointer;
+	}
+}
